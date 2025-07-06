@@ -12,8 +12,8 @@ module "resource_group1" {
 
 module "resource_group2" {
   source = "../modules/azurerm_resource_group"
-  resource_group_name = "101-rg-us"
-  resource_group_location = "canada central"
+  resource_group_name = "101-rg-uk1"
+  resource_group_location = "central uk"
 }
 
 module "virtual_network" {
