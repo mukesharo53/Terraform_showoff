@@ -15,7 +15,7 @@ data "azurerm_key_vault" "kv" {
 }
 
 data "azurerm_key_vault_secret" "vm-username" {
-  name         = ""
+  name         = var.vm_username_secret_name
   key_vault_id = data.azurerm_key_vault.kv.id
 }
 
