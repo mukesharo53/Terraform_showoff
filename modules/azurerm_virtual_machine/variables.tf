@@ -64,5 +64,8 @@ variable "vnet_name" {
 }
 
 variable "key_vault_name" {}
-variable "username_secret_name" {}
+variable "vm_username_secret_name" {
+  description = "The name of the secret storing the VM username"
+  type        = string
+}
 variable "password_secret_name" {}
